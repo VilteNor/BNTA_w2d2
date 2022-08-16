@@ -13,7 +13,7 @@ public class Account {
 
     @Override
     public String toString() {
-        return "myAccount{" + "id='" + id + ", name='" + name + ", balance=" + balance + '}';
+        return "Account{" + "id='" + id + ", name='" + name + ", balance=" + balance + '}';
     }
 
 
