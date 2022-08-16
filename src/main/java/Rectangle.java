@@ -30,7 +30,7 @@ public class Rectangle {
     public double getArea(){
         return this.width*this.length;
     }
-    public double getDiagonal(){
+    public double getDiagonal(){ // sqrt returns a double
         return Math.sqrt(Math.pow(this.width,2)+Math.pow(this.length,2));
     }
 

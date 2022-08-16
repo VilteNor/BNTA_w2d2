@@ -6,7 +6,7 @@ public class Customer {
 
     // constructor:
     public Customer(int newId, String newFirstName, String newLastName, double newHeldMoney){
-        this.id = newId;
+        this.id = (int) (Math.random()*1000+1);
         this.firstName= newFirstName;
         this.lastName=newLastName;
         this.heldMoney=newHeldMoney;
@@ -41,6 +41,10 @@ public class Customer {
 
 
 
+    @Override
+    public String toString() {
+        return "Customer{ "+ "ID = '" + id + " first name = "+firstName+ " last name = "+lastName+ " money held = "+heldMoney+'}';
+        }
 
 
-}
+        }

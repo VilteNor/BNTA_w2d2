@@ -13,7 +13,8 @@ public class Circle {
         this.radius=radius;
     }
     public double getRadius(){
-        return this.radius;
+        return this.radius; // specifically this radius
+//        return radius // can also use this but that is going to look for general variable radius
     }
     public double getCircumference(){
         return this.radius * Math.PI*2;

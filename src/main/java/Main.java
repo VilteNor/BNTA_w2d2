@@ -62,6 +62,21 @@ double circumference1= circle1.getCircumference();
             System.out.println("new diagonal = "+Math.round(diagonal2*100)/100D);
 //
 
+
+        // **** CUSTOMER **** //
+
+        Customer customer1 = new Customer(1,"Mary", "Jones", 300);
+        System.out.println(customer1);
+
+String cust1fullName = customer1.getFullName();
+        System.out.println(cust1fullName);
+
+
+
+
+
+
+
 // end of code
     }
 }
