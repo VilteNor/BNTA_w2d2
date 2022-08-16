@@ -6,7 +6,7 @@ public class Customer {
 
     // constructor:
     public Customer(int newId, String newFirstName, String newLastName, double newHeldMoney){
-        this.id = (int) (Math.random()*1000+1);
+        this.id = (int) (Math.random()*1000+1);  // but doesn't ensure that others won't have the same ID
         this.firstName= newFirstName;
         this.lastName=newLastName;
         this.heldMoney=newHeldMoney;
@@ -31,9 +31,13 @@ public class Customer {
     public String getFullName(){
         return "Customer's name is "+ firstName +" "+ lastName;
     }
+    public double getHeldMoney(){
+        return heldMoney;
+    }
     public void subtractHeldMoney(double moneyOut){
-        System.out.println("you have cashed out "+moneyOut);
-
+        this.heldMoney=heldMoney-moneyOut;
+        System.out.println("you have cashed out "+moneyOut+" and your updated balance is: "+heldMoney);
+        setHeldMoney(heldMoney);
     }
 
 

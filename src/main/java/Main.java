@@ -68,9 +68,16 @@ double circumference1= circle1.getCircumference();
         Customer customer1 = new Customer(1,"Mary", "Jones", 300);
         System.out.println(customer1);
 
-String cust1fullName = customer1.getFullName();
+        String cust1fullName = customer1.getFullName();
+        // subtract money and update balance
         System.out.println(cust1fullName);
-
+        customer1.subtractHeldMoney(10);
+        double updatedMoney = customer1.getHeldMoney();
+        System.out.println("customer's current balance is: "+updatedMoney);
+        // subtract money again:
+        customer1.subtractHeldMoney(20);
+        double updatedMoney2 = customer1.getHeldMoney();
+        System.out.println("customer's current balance is: "+updatedMoney2);
 
 
 
